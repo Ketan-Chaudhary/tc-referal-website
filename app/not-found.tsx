@@ -113,7 +113,7 @@ export default function NotFound() {
               Need help? Contact our support team
             </p>
             <Link
-              href="https://t.me/tclottery"
+              href="https://t.me/systummearninig"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-amber-500 hover:text-amber-400 transition-colors text-sm"

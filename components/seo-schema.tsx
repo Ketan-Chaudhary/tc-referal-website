@@ -9,14 +9,14 @@ export default function SEOSchema() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "TC Lottery",
-            url: "https://tclottery.com",
+            url: "https://tclotteryvip.com",
             description:
               "Join TC Lottery and win big using referral code vCW7t38771. Register for amazing bonuses!",
             potentialAction: {
               "@type": "RegisterAction",
               target: {
                 "@type": "EntryPoint",
-                urlTemplate: "https://tclottery.com/register?ref=vCW7t38771",
+                urlTemplate: "https://tclotteryvip.com/register?ref=vCW7t38771",
               },
               description:
                 "Register on TC Lottery with referral code vCW7t38771",
@@ -27,10 +27,10 @@ export default function SEOSchema() {
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "TC Lottery",
-            url: "https://tclottery.com",
-            logo: "https://tclottery.com/logo.png",
+            url: "https://tclotteryvip.com",
+            logo: "https://tclotteryvip.com/logo.png",
             sameAs: [
-              "https://t.me/tclottery",
+              "https://t.me/systummearninig",
               "https://facebook.com/tclottery",
               "https://twitter.com/tclottery",
               "https://instagram.com/tclottery",
@@ -53,7 +53,7 @@ export default function SEOSchema() {
               "Register with referral code vCW7t38771 and get 100% welcome bonus",
             priceCurrency: "USD",
             price: "0",
-            url: "https://tclottery.com/register?ref=vCW7t38771",
+            url: "https://tclotteryvip.com/register?ref=vCW7t38771",
             availability: "https://schema.org/InStock",
             seller: {
               "@type": "Organization",
