@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Gift, Link, Smartphone, Trophy, Users, Zap } from "lucide-react";
 
-import { Button } from "@/ui/button";
+import { Button } from "@/components/ui/button";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import GiftCouponCard from "@/components/gift-coupon-card";

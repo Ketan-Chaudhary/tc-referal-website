@@ -6,48 +6,98 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "TC Lottery - Win Big with Referral Code vCW7t38771 | Register Now",
+  title: {
+    default: "TC Lottery - Win Big with Referral Code vCW7t38771 | Register Now",
+    template: "%s | TC Lottery",
+  },
   description:
-    "Join TC Lottery and win big! Use referral code vCW7t38771 for exclusive bonuses. Register today for exciting prizes and instant rewards.",
-  keywords:
-    "tc lottery, vCW7t38771, tc lottery referral code, tc lottery app, tc lottery download, tc lottery login, tc lottery coupon, tc lottery telegram, tc lottery manager referral code, tc lottery customer care, tc lottery sign-up bonus, tc lottery promo code, tc lottery game download",
+    "Access your TC Lottery account easily at tclottery.com. Login or register and explore exciting colour games, daily gift codes, and app download options. Use referral code vCW7t38771 for exclusive bonuses.",
+  keywords: [
+    "tc lottery",
+    "vCW7t38771",
+    "tc lottery login",
+    "tc lottery registration",
+    "tc lottery referral code",
+    "tc lottery app",
+    "tc lottery download",
+    "tc lottery coupon",
+    "tc lottery telegram",
+    "tc lottery manager referral code",
+    "tc lottery customer care",
+    "tc lottery sign-up bonus",
+    "tc lottery promo code",
+    "tc lottery game download",
+    "colour games",
+    "daily gift codes",
+    "lottery games",
+    "casino games",
+    "online lottery",
+    "mobile lottery app",
+    "lottery bonuses",
+    "referral bonuses",
+  ].join(", "),
+  authors: [{ name: "TC Lottery" }],
+  creator: "TC Lottery",
+  publisher: "TC Lottery",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL("https://tclottery.com"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "TC Lottery - Win Big with Referral Code vCW7t38771",
-    description: "Join TC Lottery, use referral code vCW7t38771 for exclusive bonuses. Register and win big!",
+    type: "website",
+    locale: "en_US",
     url: "https://tclottery.com",
+    title: "TC Lottery Login & Registration Link – Join the Fun! - TC LOTTERY",
+    description:
+      "Login or register on TC Lottery and explore exciting colour games, daily gift codes, and app download options. Use referral code vCW7t38771 for exclusive bonuses.",
     siteName: "TC Lottery",
     images: [
       {
-        url: "https://tclottery.com/og-image.jpg",
+        url: "/favicon.ico",
         width: 1200,
         height: 630,
         alt: "TC Lottery - Win Big with Referral Code vCW7t38771",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TC Lottery - Win Big with Referral Code vCW7t38771",
-    description: "Join TC Lottery, use referral code vCW7t38771 for exclusive bonuses. Register and win big!",
-    images: ["https://tclottery.com/twitter-image.jpg"],
+    title: "TC Lottery Login & Registration Link – Join the Fun!",
+    description:
+      "Login or register on TC Lottery and explore exciting colour games, daily gift codes, and app download options. Use referral code vCW7t38771 for exclusive bonuses.",
+    images: ["/favicon.ico"],
+    creator: "@tclottery",
   },
   robots: {
     index: true,
     follow: true,
+    nocache: true,
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: false,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
     },
   },
-  alternates: {
-    canonical: "https://tclottery.com",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
-    generator: 'v0.dev'
+  manifest: "/site.webmanifest",
+  other: {
+    "referral-code": "vCW7t38771",
+    "mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "black-translucent",
+  },
 }
 
 export default function RootLayout({
@@ -58,29 +108,81 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#000000" />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="referral-code" content="vCW7t38771" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="theme-color" content="#F59E0B" />
+        <meta name="msapplication-TileColor" content="#F59E0B" />
+        <meta name="apple-mobile-web-app-title" content="TC Lottery" />
+        <meta name="application-name" content="TC Lottery" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="canonical" href="https://tclottery.com" />
+
+        {/* Enhanced Schema Markup */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "TC Lottery",
-              url: "https://tclottery.com",
-              description: "Join TC Lottery and win big using referral code vCW7t38771. Register for amazing bonuses!",
-              potentialAction: {
-                "@type": "RegisterAction",
-                target: {
-                  "@type": "EntryPoint",
-                  urlTemplate: "https://tclottery.com/register?ref=vCW7t38771",
-                },
-                description: "Register on TC Lottery with referral code vCW7t38771",
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "TC Lottery",
+                alternateName: "TC LOTTERY",
+                url: "https://tclottery.com",
+                description:
+                  "Login or register on TC Lottery and explore exciting colour games, daily gift codes, and app download options. Use referral code vCW7t38771 for exclusive bonuses.",
+                potentialAction: [
+                  {
+                    "@type": "SearchAction",
+                    target: {
+                      "@type": "EntryPoint",
+                      urlTemplate: "https://tclottery.com/search?q={search_term_string}",
+                    },
+                    "query-input": "required name=search_term_string",
+                  },
+                  {
+                    "@type": "RegisterAction",
+                    target: {
+                      "@type": "EntryPoint",
+                      urlTemplate: "https://tclottery.com/register?ref=vCW7t38771",
+                    },
+                    description: "Register on TC Lottery with referral code vCW7t38771",
+                  },
+                ],
               },
-            }),
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "TC Lottery",
+                url: "https://tclottery.com",
+                logo: "https://tclottery.com/favicon.ico",
+                description: "Premier online lottery platform offering exciting games and bonuses",
+                sameAs: [
+                  "https://t.me/tclottery",
+                  "https://facebook.com/tclottery",
+                  "https://twitter.com/tclottery",
+                  "https://instagram.com/tclottery",
+                ],
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  contactType: "customer service",
+                  availableLanguage: ["English"],
+                  url: "https://t.me/tclottery",
+                },
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                name: "TC Lottery App",
+                operatingSystem: ["Android", "iOS"],
+                applicationCategory: "GameApplication",
+                description: "Download TC Lottery mobile app for exciting lottery games and bonuses",
+                offers: {
+                  "@type": "Offer",
+                  price: "0",
+                  priceCurrency: "USD",
+                },
+              },
+            ]),
           }}
         />
       </head>

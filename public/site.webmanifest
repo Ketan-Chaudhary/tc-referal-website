@@ -1,0 +1,20 @@
+{
+  "name": "TC Lottery",
+  "short_name": "TC Lottery",
+  "description": "Login or register on TC Lottery and explore exciting colour games, daily gift codes, and app download options. Use referral code vCW7t38771 for exclusive bonuses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#F59E0B",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["games", "entertainment"],
+  "lang": "en",
+  "dir": "ltr"
+}
