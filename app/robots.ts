@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/private/", "/admin/"],
     },
-    sitemap: "https://tclottery.com/sitemap.xml",
+    sitemap: "https://tclotteryvip.com/sitemap.xml",
   }
 }
