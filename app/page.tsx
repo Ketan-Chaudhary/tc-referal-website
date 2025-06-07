@@ -71,7 +71,7 @@ export default function Home() {
       {/* Enhanced Registration CTA Section */}
       <section className="py-20 bg-black relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-900/50 to-black/80 z-0"></div>
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20 z-0"></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-20 z-0"></div>
 
         {/* Animated light beams */}
         <div className="absolute inset-0 overflow-hidden z-0">
