@@ -1,72 +1,28 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { Menu, X } from "lucide-react";
+import { useState } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { Menu, X } from "lucide-react"
 
-import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetClose,
-} from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button"
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet"
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-black/80 backdrop-blur-sm">
       <div className="container flex h-16 items-center px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Image
-            src="/favicon.ico"
-            alt="TC Lottery Logo"
-            width={32}
-            height={32}
-            className="rounded"
-          />
+          <Image src="/favicon.ico" alt="TC Lottery Logo" width={32} height={32} className="rounded" priority />
           <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-yellow-300">
             TC LOTTERY
           </span>
         </Link>
         <nav className="hidden md:flex ml-auto gap-6">
-          <Link
-            href="/"
-            className="text-sm font-medium text-zinc-200 hover:text-amber-500 transition-colors"
-          >
+          <Link href="/" className="text-sm font-medium text-zinc-200 hover:text-amber-500 transition-colors">
             Home
-          </Link>
-          <Link
-            href="/how-it-works"
-            className="text-sm font-medium text-zinc-200 hover:text-amber-500 transition-colors"
-          >
-            How It Works
-          </Link>
-          <Link
-            href="/faq"
-            className="text-sm font-medium text-zinc-200 hover:text-amber-500 transition-colors"
-          >
-            FAQ
-          </Link>
-          <Link
-            href="/customer-service"
-            className="text-sm font-medium text-zinc-200 hover:text-amber-500 transition-colors"
-          >
-            Customer Service
-          </Link>
-          <Link
-            href="/blog"
-            className="text-sm font-medium text-zinc-200 hover:text-amber-500 transition-colors"
-          >
-            Blog
-          </Link>
-          <Link
-            href="/contact"
-            className="text-sm font-medium text-zinc-200 hover:text-amber-500 transition-colors"
-          >
-            Contact
           </Link>
           <Link
             href="https://t.me/systummearninig"
@@ -102,10 +58,7 @@ export default function Navbar() {
           </Button>
           <Button
             className="bg-gradient-to-r from-amber-500 to-yellow-300 text-black hover:from-amber-600 hover:to-yellow-400"
-            onClick={() =>
-              (window.location.href =
-                "https://www.tcvvip12.com/#/register?invitationCode=vCW7t38771")
-            }
+            onClick={() => (window.location.href = "https://www.tcvvip12.com/#/register?invitationCode=vCW7t38771")}
           >
             Register
           </Button>
@@ -117,23 +70,10 @@ export default function Navbar() {
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent
-            side="right"
-            className="bg-zinc-900 border-zinc-800 w-[300px] sm:w-[400px]"
-          >
+          <SheetContent side="right" className="bg-zinc-900 border-zinc-800 w-[300px] sm:w-[400px]">
             <div className="flex items-center justify-between mb-6">
-              <Link
-                href="/"
-                className="flex items-center gap-2"
-                onClick={() => setIsOpen(false)}
-              >
-                <Image
-                  src="/favicon.ico"
-                  alt="TC Lottery Logo"
-                  width={24}
-                  height={24}
-                  className="rounded"
-                />
+              <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
+                <Image src="/favicon.ico" alt="TC Lottery Logo" width={24} height={24} className="rounded" />
                 <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-yellow-300">
                   TC LOTTERY
                 </span>
@@ -152,46 +92,6 @@ export default function Navbar() {
                   className="text-zinc-200 hover:text-amber-500 transition-colors py-2 px-3 rounded-md hover:bg-zinc-800"
                 >
                   Home
-                </Link>
-              </SheetClose>
-              <SheetClose asChild>
-                <Link
-                  href="/how-it-works"
-                  className="text-zinc-200 hover:text-amber-500 transition-colors py-2 px-3 rounded-md hover:bg-zinc-800"
-                >
-                  How It Works
-                </Link>
-              </SheetClose>
-              <SheetClose asChild>
-                <Link
-                  href="/faq"
-                  className="text-zinc-200 hover:text-amber-500 transition-colors py-2 px-3 rounded-md hover:bg-zinc-800"
-                >
-                  FAQ
-                </Link>
-              </SheetClose>
-              <SheetClose asChild>
-                <Link
-                  href="/customer-service"
-                  className="text-zinc-200 hover:text-amber-500 transition-colors py-2 px-3 rounded-md hover:bg-zinc-800"
-                >
-                  Customer Service
-                </Link>
-              </SheetClose>
-              <SheetClose asChild>
-                <Link
-                  href="/blog"
-                  className="text-zinc-200 hover:text-amber-500 transition-colors py-2 px-3 rounded-md hover:bg-zinc-800"
-                >
-                  Blog
-                </Link>
-              </SheetClose>
-              <SheetClose asChild>
-                <Link
-                  href="/contact"
-                  className="text-zinc-200 hover:text-amber-500 transition-colors py-2 px-3 rounded-md hover:bg-zinc-800"
-                >
-                  Contact
                 </Link>
               </SheetClose>
               <SheetClose asChild>
@@ -225,8 +125,8 @@ export default function Navbar() {
                     variant="outline"
                     className="w-full text-zinc-200 border-zinc-700 hover:bg-zinc-800 hover:text-white"
                     onClick={() => {
-                      setIsOpen(false);
-                      window.location.href = "http://tcvvip2.com";
+                      setIsOpen(false)
+                      window.location.href = "http://tcvvip2.com"
                     }}
                   >
                     Login
@@ -236,9 +136,8 @@ export default function Navbar() {
                   <Button
                     className="w-full bg-gradient-to-r from-amber-500 to-yellow-300 text-black hover:from-amber-600 hover:to-yellow-400"
                     onClick={() => {
-                      setIsOpen(false);
-                      window.location.href =
-                        "https://www.tcvvip12.com/#/register?invitationCode=vCW7t38771";
+                      setIsOpen(false)
+                      window.location.href = "https://www.tcvvip12.com/#/register?invitationCode=vCW7t38771"
                     }}
                   >
                     Register
@@ -250,5 +149,5 @@ export default function Navbar() {
         </Sheet>
       </div>
     </header>
-  );
+  )
 }
