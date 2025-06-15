@@ -7,13 +7,28 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default:
-      "TC Lottery Login & Registration Link – Join the Fun! - TC LOTTERY",
+    default: "TC Lottery - Best Color Prediction Game | Win Unlimited Money",
     template: "%s | TC Lottery",
   },
   description:
-    "Access your TC Lottery account easily at tclottery.com. Login or register and explore exciting colour games, daily gift codes, and app download options. Use referral code vCW7t38771 for exclusive bonuses and amazing rewards.",
+    "Welcome to the TC Lottery official website. Play the best Color Prediction game with us and win unlimited money. 24×7 Support and fast withdrawals are our keys to your trust. Login or Register now and get sign-up bonus.",
   keywords: [
+    "tc lottery",
+    "color prediction game",
+    "vCW7t38771",
+    "referral code",
+    "sign up bonus",
+    "fast withdrawal",
+    "24x7 support",
+    "win money online",
+    "lottery games",
+    "prediction games",
+    "online gaming",
+    "instant payout",
+    "secure gaming",
+    "mobile lottery",
+    "indian lottery",
+    "rupees winning",
     "tc lottery",
     "vCW7t38771",
     "account",
@@ -125,26 +140,25 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     url: "https://tclotteryvip.com",
-    title: "TC Lottery Login & Registration Link – Join the Fun! - TC LOTTERY",
+    title: "TC Lottery - Best Color Prediction Game | Win Unlimited Money",
     description:
-      "Login or register on TC Lottery and explore exciting colour games, daily gift codes, and app download options. Use referral code vCW7t38771 for exclusive bonuses.",
+      "Welcome to the TC Lottery official website. Play the best Color Prediction game with us and win unlimited money. 24×7 Support and fast withdrawals.",
     siteName: "TC Lottery",
     images: [
       {
         url: "/tclottery-banner.webp",
         width: 1200,
         height: 630,
-        alt: "TC Lottery - Win Big with Referral Code vCW7t38771",
+        alt: "TC Lottery - Best Color Prediction Game",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "TC Lottery Login & Registration Link – Join the Fun!",
+    title: "TC Lottery - Best Color Prediction Game | Win Unlimited Money",
     description:
-      "Login or register on TC Lottery and explore exciting colour games, daily gift codes, and app download options. Use referral code vCW7t38771 for exclusive bonuses.",
+      "Welcome to the TC Lottery official website. Play the best Color Prediction game with us and win unlimited money. 24×7 Support and fast withdrawals.",
     images: ["/tclottery-banner.webp"],
-    creator: "@tclotteryvip",
   },
   robots: {
     index: true,
@@ -208,13 +222,14 @@ export default function RootLayout({
                 alternateName: "TC LOTTERY",
                 url: "https://tclotteryvip.com",
                 description:
-                  "Login or register on TC Lottery and explore exciting colour games, daily gift codes, and app download options. Use referral code vCW7t38771 for exclusive bonuses.",
+                  "Welcome to the TC Lottery official website. Play the best Color Prediction game with us and win unlimited money. 24×7 Support and fast withdrawals are our keys to your trust. Login or Register now and get sign-up bonus.",
                 potentialAction: [
                   {
                     "@type": "RegisterAction",
                     target: {
                       "@type": "EntryPoint",
-                      urlTemplate: "https://tclotteryvip.com/",
+                      urlTemplate:
+                        "https://tclotteryvip.com/register?ref=vCW7t38771",
                     },
                     description:
                       "Register on TC Lottery with referral code vCW7t38771",

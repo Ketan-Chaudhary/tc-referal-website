@@ -15,7 +15,15 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-black/80 backdrop-blur-sm">
       <div className="container flex h-16 items-center px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/favicon.ico" alt="TC Lottery Logo" width={32} height={32} className="rounded" priority />
+          <Image
+            src="/favicon.ico"
+            alt="TC Lottery Logo"
+            width={32}
+            height={32}
+            className="rounded"
+            priority
+            sizes="32px"
+          />
           <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-yellow-300">
             TC LOTTERY
           </span>
@@ -52,13 +60,13 @@ export default function Navbar() {
           <Button
             variant="outline"
             className="text-zinc-200 border-zinc-700 hover:bg-zinc-800 hover:text-white"
-            onClick={() => (window.location.href = "http://tcvvip2.com")}
+            onClick={() => window.open("https://www.tcvvip12.com/#/login", "_blank")}
           >
             Login
           </Button>
           <Button
             className="bg-gradient-to-r from-amber-500 to-yellow-300 text-black hover:from-amber-600 hover:to-yellow-400"
-            onClick={() => (window.location.href = "https://www.tcvvip12.com/#/register?invitationCode=vCW7t38771")}
+            onClick={() => window.open("https://www.tcvvip12.com/#/register?invitationCode=vCW7t38771", "_blank")}
           >
             Register
           </Button>
@@ -73,7 +81,14 @@ export default function Navbar() {
           <SheetContent side="right" className="bg-zinc-900 border-zinc-800 w-[300px] sm:w-[400px]">
             <div className="flex items-center justify-between mb-6">
               <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
-                <Image src="/favicon.ico" alt="TC Lottery Logo" width={24} height={24} className="rounded" />
+                <Image
+                  src="/favicon.ico"
+                  alt="TC Lottery Logo"
+                  width={24}
+                  height={24}
+                  className="rounded"
+                  sizes="24px"
+                />
                 <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-yellow-300">
                   TC LOTTERY
                 </span>
@@ -126,7 +141,7 @@ export default function Navbar() {
                     className="w-full text-zinc-200 border-zinc-700 hover:bg-zinc-800 hover:text-white"
                     onClick={() => {
                       setIsOpen(false)
-                      window.location.href = "http://tcvvip2.com"
+                      window.open("https://www.tcvvip12.com/#/login", "_blank")
                     }}
                   >
                     Login
@@ -137,7 +152,7 @@ export default function Navbar() {
                     className="w-full bg-gradient-to-r from-amber-500 to-yellow-300 text-black hover:from-amber-600 hover:to-yellow-400"
                     onClick={() => {
                       setIsOpen(false)
-                      window.location.href = "https://www.tcvvip12.com/#/register?invitationCode=vCW7t38771"
+                      window.open("https://www.tcvvip12.com/#/register?invitationCode=vCW7t38771", "_blank")
                     }}
                   >
                     Register

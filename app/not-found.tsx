@@ -6,7 +6,7 @@ import { Home, ArrowLeft } from "lucide-react"
 export const metadata = {
   title: "404 - Page Not Found | TC Lottery",
   description:
-    "The page you're looking for doesn't exist. Return to TC Lottery homepage and use referral code vCW7t38771 for exclusive bonuses.",
+    "The page you're looking for doesn't exist. Return to TC Lottery homepage and use referral code vCW7t38771 for sign-up bonus.",
 }
 
 export default function NotFound() {
@@ -16,7 +16,7 @@ export default function NotFound() {
         <div className="flex flex-col items-center text-center space-y-8 max-w-2xl mx-auto">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <Image src="/favicon.ico" alt="TC Lottery Logo" width={48} height={48} className="rounded" />
+            <Image src="/favicon.ico" alt="TC Lottery Logo" width={48} height={48} className="rounded" sizes="48px" />
             <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-yellow-300">
               TC LOTTERY
             </span>
@@ -36,7 +36,7 @@ export default function NotFound() {
           <div className="bg-gradient-to-r from-amber-500/20 to-yellow-300/20 p-6 rounded-lg border border-amber-500/30 max-w-md mx-auto">
             <p className="text-zinc-300 text-sm mb-2">Don't forget our referral code:</p>
             <div className="text-2xl font-black text-amber-500 tracking-wider">vCW7t38771</div>
-            <p className="text-zinc-400 text-xs mt-2">Use this code when registering for exclusive bonuses!</p>
+            <p className="text-zinc-400 text-xs mt-2">Use this code when registering for sign-up bonus!</p>
           </div>
 
           {/* Action Buttons */}
