@@ -2,7 +2,7 @@ import type React from "react";
 import "@/app/globals.css";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -133,14 +133,14 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://tclotteryvip.com"),
+  metadataBase: new URL("https://www.tclotteryvip.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://tclotteryvip.com",
+    url: "https://www.tclotteryvip.com",
     title: "TC Lottery - Best Color Prediction Game | Win Unlimited Money",
     description:
       "Welcome to the TC Lottery official website. Play the best Color Prediction game with us and win unlimited money. 24×7 Support and fast withdrawals.",
@@ -207,7 +207,7 @@ export default function RootLayout({
         <meta name="application-name" content="TC Lottery" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://tclotteryvip.com" />
+        <link rel="canonical" href="https://www.tclotteryvip.com" />
         <link rel="preload" href="/tclottery-banner.webp" as="image" />
         <link rel="preload" href="/favicon.ico" as="image" />
 
@@ -221,7 +221,7 @@ export default function RootLayout({
                 "@type": "WebSite",
                 name: "TC Lottery",
                 alternateName: "TC LOTTERY",
-                url: "https://tclotteryvip.com",
+                url: "https://www.tclotteryvip.com",
                 description:
                   "Welcome to the TC Lottery official website. Play the best Color Prediction game with us and win unlimited money. 24×7 Support and fast withdrawals are our keys to your trust. Login or Register now and get sign-up bonus.",
                 potentialAction: [
@@ -230,7 +230,7 @@ export default function RootLayout({
                     target: {
                       "@type": "EntryPoint",
                       urlTemplate:
-                        "https://tclotteryvip.com/register?ref=vCW7t38771",
+                        "https://www.tclotteryvip.com/register?ref=vCW7t38771",
                     },
                     description:
                       "Register on TC Lottery with referral code vCW7t38771",
@@ -241,8 +241,8 @@ export default function RootLayout({
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 name: "TC Lottery",
-                url: "https://tclotteryvip.com",
-                logo: "https://tclotteryvip.com/favicon.ico",
+                url: "https://www.tclotteryvip.com",
+                logo: "https://www.tclotteryvip.com/favicon.ico",
                 description:
                   "Premier online lottery platform offering exciting games and bonuses",
                 contactPoint: {
@@ -265,7 +265,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
-         <SpeedInsights />
+        <SpeedInsights />
       </body>
     </html>
   );
