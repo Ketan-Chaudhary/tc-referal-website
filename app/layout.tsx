@@ -14,7 +14,10 @@ export const metadata = {
   description:
     "Welcome to the TC Lottery official website. Play the best Color Prediction game with us and win unlimited money. 24×7 Support and fast withdrawals are our keys to your trust. Login or Register now and get sign-up bonus.",
   keywords: [
+    "tc win login",
     "tc lottery",
+    "tc lottery login link",
+    "tc lottery vip prediction",
     "color prediction game",
     "vCW7t38771",
     "referral code",
@@ -186,7 +189,6 @@ export const metadata = {
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black-translucent",
   },
-  generator: "v0.dev",
 };
 
 export default function RootLayout({
