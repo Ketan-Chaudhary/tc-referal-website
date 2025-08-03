@@ -7,8 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default:
-      "TC Lottery - India's #1 Color Prediction Game | Win ₹10 Lakh Daily with vCW7t38771",
+    default: "TC Lottery - India's #1 Color Prediction Game ",
     template: "%s | TC Lottery - Best Color Prediction Game India",
   },
   description:
@@ -49,6 +48,7 @@ export const metadata = {
     "color prediction game hyderabad",
     "color prediction game chennai",
     "color prediction game kolkata",
+    "color prediction game india",
 
     // Action Keywords
     "play color prediction game",
@@ -61,6 +61,13 @@ export const metadata = {
     // Referral & Bonus Keywords
     "vCW7t38771 referral code",
     "tc lottery bonus code",
+    "tc lottery",
+    "real money game",
+    "money game",
+    "gambiling",
+    "easy money game",
+    "color game",
+    "easy money game",
     "color prediction signup bonus",
     "instant withdrawal color game",
     "fast payout prediction game",
