@@ -168,7 +168,7 @@ export default function RootLayout({
         <meta name="language" content="English" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://tclotteryvip.com" />
+        <link rel="canonical" href="https://www.tclotteryvip.com" />
         <link rel="preload" href="/tclottery-banner.webp" as="image" />
         <link rel="preload" href="/favicon.ico" as="image" />
 
